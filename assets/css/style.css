@@ -1,0 +1,546 @@
+/* reset página */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    /* fonte da página */
+}
+
+/* CORPO DA PAGINA */
+body {
+    background-color: #252222;
+    color: #ffffff; /* altura desse elemento seja exatamente igual à altura total da janela de visualização do usuário. (viewport height): É uma unidade de medida relativa */
+}
+
+.navgation {
+    max-width: 1280px; /* largura máxima */
+    margin: 0 auto; /* centraliza */
+}
+
+.flex {
+    display: flex; /* exibe elementos em linha */
+    justify-content: center; /* alinha elementos ao centro */
+    
+}
+
+/* h2 titulo geral */
+
+h2.titulo {
+    color: #fff;
+    font-size: 38px;
+    text-align: center;
+}
+
+h2.titulo span {
+    color: #00b3b3;
+}
+
+/* -----CABEÇALHO----- */
+
+header {
+    padding: 40px 4%; /* 4% é a largura do container */
+}
+
+header > .navgation {
+    display: flex; /* exibe em linha */
+    align-items: center; /* alinha verticalmente */
+    justify-content: space-between; /* espaçamento entre os elementos */
+}
+
+.logo img {
+    width: 200px; /* Ajuste este valor para o tamanho desejado da sua logo */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Garante que a imagem se comporte como um bloco para o layout */
+}
+
+header a {
+    color: #00918e; /* cor do texto */
+    text-decoration: none; /* remove o sublinhado */
+    display: inline-block;
+    transition: .3s; /* tempo de transição */
+}
+
+
+header a:hover {
+    color: #00b3b3; /* cor do texto ao passar o mouse */
+    transform: scale(1.15); /* aumenta o tamanho do texto */
+}
+
+header nav ul {
+    list-style: none; /* remove a lista */
+}
+
+header nav ul li {
+    display: inline-block; /* exibe em linha */
+    padding: 0 60px; /* espaçamento entre os elementos */
+}
+
+header .btn-contato button {
+    padding: 10px 30px; /* espaçamento entre o texto e a borda */
+    font-size: 16px; /* tamanho da fonte */
+    font-weight: 500; /* peso da fonte */
+    background-color: #00918e; /* cor de fundo */
+    border: 0; /* remove a borda */
+    border-radius: 25px; /* arredonda as bordas */
+    cursor: pointer; /* muda o cursor para um ponteiro de mão */
+}
+
+header .btn-contato button:hover {
+    box-shadow: 0px 0px 8px rgba(1, 202, 252, 0.2); /* sombra ao passar o cursor */
+    background-color: #00b3b3; /* cor de fundo ao passar o cursor */
+}
+
+
+/* CONTEUDO PRINCIPAL  */
+
+section .main-content {
+    padding: 40px 4%; /* espaçamento entre o conteúdo e a borda */
+}
+
+section .main-content .flex {
+    align-items: center; /* alinha os elementos verticalmente */
+    justify-content: center; /* alinha os elementos horizontalmente */
+    gap: 120px;
+}
+
+
+
+.main-content .text-topo h1 {
+    padding: 0 4%; /* Mantenha o padding horizontal se for o recuo do texto */
+    margin-top: 0; /* Remove a margem superior padrão do h1 */
+    margin-bottom: 5px; /* Define um pequeno espaçamento ABAIXO do h1 */
+    font-size: 50px;
+    color: #00918e; /* Ajuste para a cor correta da sua imagem (parece ser #008080 ou similar) */
+    line-height: 1.2; /* Use um valor sem unidade para line-height, é mais flexível */
+}
+
+.main-content .text-topo .destaque {
+    color: #ffffff;
+}
+
+
+
+.main-content .text-topo h3 {
+    padding: 0 4%; /* Remova o padding vertical */
+    margin-top: 0;       /* Remove a margem superior padrão do h3 */
+    margin-bottom: 10px; /* Define um espaçamento ABAIXO do h3 */
+    font-size: 24px;
+    color: #c2cccc; /* Ajuste para a cor correta (parece ser um cinza mais escuro) */
+}
+
+.main-content .text-topo p {
+    padding: 0 4%; /* Remova o padding vertical */
+    margin-top: 0;       /* Remove a margem superior padrão do p */
+    margin-bottom: 30px; /* Define um espaçamento ABAIXO do parágrafo para afastar dos botões */
+    font-size: 18px;
+    color: #fff;
+    line-height: 1.6; /* Melhora a legibilidade do texto */
+    max-width: 600px; /* Adicione um limite de largura para o texto não ficar muito esticado */
+}
+
+/* estilazação do botão de contato */
+
+.btn-contato {
+    padding: 40px 4%; /* 4% é a largura do container */
+    display: flex; /* Transforma o contêiner em um flex container */
+    align-items: center; /* Alinha os itens verticalmente no centro (útil se tiverem alturas diferentes) */
+    gap: 20px; /* Adiciona 20 pixels de espaço ENTRE os itens filhos diretos */
+}
+
+.btn-1 {
+    padding: 10px 30px; /* espaçamento entre o texto e a borda */
+    font-size: 16px; /* tamanho da fonte */
+    font-weight: 500; /* peso da fonte */
+    background-color: #00918e; /* cor de fundo */
+    border: 0; /* remove a borda */
+    border-radius: 25px; /* arredonda as bordas */
+    cursor: pointer; /* muda o cursor para um ponteiro de mão */
+    text-decoration: none;
+}
+
+.btn-1:hover {
+    background-color: #00b3b3; /* cor de fundo ao passar o cursor */
+    box-shadow: 0px 0px 8px rgba(1, 202, 252, 0.2); /* sombra ao passar o cursor */
+    transition: .3s; /* tempo de transição */
+    text-decoration: none;
+    transform: scale(1.05); /* aumenta o tamanho do botão */
+}
+
+.btn-2 {
+    padding: 10px 30px; /* espaçamento entre o texto e a borda */
+    font-size: 16px; /* tamanho da fonte */
+    text-decoration: none; /* remove a linha sob a fonte */
+    font-weight: bold; /* peso da fonte */
+    color: #c2cccc;
+    transition: color 0.3s ease; /* Transição suave para efeitos de hover */
+    border: 2px solid #00b3b3; /* borda */
+    border-radius: 20px; /* arredonda as bordas */
+}
+
+.btn-2:hover {
+    color: #fff; /* cor ao passar o cursor */
+    text-decoration: none; /* remove a linha sob a fonte */
+    transform: scale(1.05);
+    transition: .3s;
+}
+
+/* ESTILIZAR IMAGEM */
+
+.main-content .img-topo img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate; /* Animação de flutuação */
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+
+    100% {
+        top: 20px;
+    }
+}
+
+
+/* MOCHILA DEV */
+
+/* Seção principal da Mochila DEV */
+section.mochila-dev {
+    padding: 40px 4%; /* Espaçamento entre o conteúdo e a borda */
+    display: flex; /* Torna a seção um contêiner flex para centralizar o .flex interno */
+    justify-content: center; /* Centraliza o .flex horizontalmente */
+    align-items: center; /* Centraliza o .flex verticalmente (se houver altura suficiente na seção) */
+    min-height: 80vh; /* Exemplo: Garante uma altura mínima para a seção, se necessário */
+}
+
+/* Contêiner interno que organiza a imagem e o bloco de conhecimentos/ícones */
+section.mochila-dev .flex {
+    display: flex; /* Torna este um contêiner flexível */
+    align-items: center; /* Alinha os itens (imagem e conhecimentos) verticalmente ao centro */
+    justify-content: center; /* Alinha os itens horizontalmente (útil em telas pequenas com flex-wrap) */
+    gap: 40px; /* <--- AJUSTE O VALOR AQUI! Reduza para um espaçamento menor entre a imagem e o bloco de texto/ícones */
+    flex-wrap: wrap; /* Permite que os itens quebrem a linha em telas menores */
+    max-width: 1200px; /* Define uma largura máxima para este bloco de conteúdo */
+    width: 100%; /* Garante que ocupe a largura disponível até o max-width */
+}
+
+h4 {
+    font-size: 24px;
+    text-align: center;
+}
+
+h4:hover {
+    color: #00918e;
+    transition: .3s; /* tempo de transição */
+    text-decoration: none;
+}
+
+/* Estilos para o contêiner da imagem da mochila */
+.mochila-dev .img-mochila {
+    flex-shrink: 0; /* Impede que a imagem encolha demais em telas pequenas */
+}
+
+.mochila-dev .img-mochila img {
+    width: 600px; /* Ajuste este valor para o tamanho desejado da sua logo/mochila */
+    max-width: 100%; /* Garante responsividade */
+    height: auto; /* Mantém a proporção da imagem */
+    display: block; /* Remove o espaço extra abaixo da imagem */
+    /* justify-content: center; -- Removido, não tem efeito em img */
+}
+
+/* Estilos para o bloco de conhecimentos (onde o texto e os ícones estão) */
+.mochila-dev .conhecimentos {
+    flex-grow: 1; /* Permite que o bloco de conhecimentos ocupe o espaço restante */
+    max-width: 600px; /* Limita a largura do texto para melhor legibilidade */
+    /* text-align: right; -- Removido, pois você quer os ícones alinhados */
+    /* justify-content: center; -- Removido, não tem efeito aqui */
+    text-align: left; /* Ou center, dependendo de como você quer o texto dentro de .conhecimentos */
+}
+
+
+/* Contêiner dos ícones de tecnologia */
+.icons {
+    display: flex; /* Transforma o contêiner em flex para alinhar os ícones horizontalmente */
+    gap: 15px;     /* Espaçamento entre os ícones */
+    justify-content: center; /* Alinha os ícones ao centro DENTRO da sua div .icons */
+    margin-top: 30px; /* Adiciona um espaço do texto acima para os ícones, ou use um valor negativo se quiser colá-los mais */
+}
+
+/* icones da mochila */
+.icons img {
+    width: 40px; /* Tamanho dos ícones */
+    height: 40px; /* Tamanho dos ícones */
+}
+
+
+/* Opcional: Responsividade para telas menores */
+@media (max-width: 768px) {
+    section.mochila-dev .flex {
+        flex-direction: column; /* Empilha a imagem e o texto/ícones verticalmente */
+        gap: 30px; /* Ajusta o gap para telas menores */
+    }
+
+    .mochila-dev .img-mochila {
+        margin-bottom: 20px; /* Espaço entre imagem e texto quando empilhados */
+    }
+
+    .mochila-dev .conhecimentos {
+        text-align: center; /* Centraliza o texto quando empilhado */
+    }
+
+    .icons {
+        justify-content: center; /* Garante que os ícones fiquem centralizados em telas pequenas */
+    }
+}
+
+/* Estilo Trabalhos */
+
+section.trabalhos {
+    padding: 40px 4%; /* Espaçamento entre o conteúdo e a borda */
+}
+
+section.trabalhos .flex {
+    gap: 60px; /* Espaçamento entre as imagens */
+}
+
+.trabalhos .tb-box {
+    color: #fff;
+    padding: 40px; /* Espaçamento entre o conteúdo e a borda */
+    margin-top: 46px; /* Espaço entre as boxes */
+    border-radius: 20px; /* Arredondar as bordas */
+    transition: 1.2s; /* Efeito de transição */
+}
+
+.trabalhos .tb-box:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da box ao passar o mouse */
+    box-shadow: 0 0 20px rgb(13, 179, 221) /* Adiciona sombra ao passar o mouse */
+    
+}
+
+.trabalhos .tb-box i {
+    font-size: 68px; /* Tamanho do ícone */
+    color: #00918e;
+}
+
+.trabalhos .tb-box h3 {
+    font-size: 28px; /* Tamanho do título */
+    margin: 15px 0; /* Espaço entre o título e o texto 15px cima/baixo 0px lado */
+}
+
+
+/* SEÇÃO SOBRE MIM */
+
+section.sobre {
+    padding: 80px 4%; /* Espaçamento entre o conteúdo e a borda */
+}
+
+section.sobre .img-sobre img {
+    width: 120%; /* Tamanho da imagem */
+}
+
+section.sobre .flex {
+    align-items: center; /* Alinha os elementos verticalmente */
+    gap: 110px; /* Espaçamento entre as imagens */
+}
+
+.sobre .txt-sobre {
+    color: #fff;
+}
+
+.sobre .txt-sobre h2 {
+    font-size: 40px; /* Tamanho do título */
+    line-height: 40px; /* Espaçamento entre as linhas */
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre span {
+    color: #00918e;
+    display: block; /* Coloca o texto em bloco */
+}
+
+.sobre .txt-sobre p {
+    font-size: 18px; /* Tamanho do texto */
+    margin: 20px 0; /* Espaço entre o texto e a borda */
+    text-align: justify; /* Alinha o texto */
+}
+
+.sobre .txt-sobre .btn-social button {
+    width: 60px; /* Tamanho do botão */
+    height: 60px; /* Tamanho do botão */
+    border-radius: 30px; /* Forma do botão */
+    border: none; /* Remove a borda */
+    background-color: #00918e;
+    color: #252222;
+    font-size: 32px; /* Tamanho do texto */
+    cursor: pointer; /* Muda o cursor para um ponteiro de mão */
+    margin: 0 5px; /* Espaço entre os botões */
+}
+
+.sobre .txt-sobre .btn-social button:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da box ao passar o mouse */
+    box-shadow: 0 0 20px rgb(13, 179, 221); /* Adiciona sombra ao passar o mouse */
+    transition: .2s; /* Efeito de transição */
+}
+
+/* PORTFÓLIO ESTILIZACAO */
+
+section.portfolio {
+    padding: 80px 4%; /* Espaçamento entre a borda e o conteúdo */
+    box-shadow: 0 0 40px 10px #beecec5b; /* Adiciona sombra */
+}
+
+section.portfolio .flex {
+    justify-content: space-around; /* Distribui os elementos de forma igual */
+    margin-top: 60px; /* Espaço entre a borda e o conteúdo */
+}
+
+.img-port {
+    width: 360px; /* Tamanho da imagem */
+    height: 460px; /* Tamanho da imagem */
+    background-color: #00918e;
+    background-size: cover; /* Tamanho da imagem */
+    background-position: 100%; /* Posição da imagem */
+    transition: 8s; /* Efeito de transição */
+    border-radius: 40px; /* Forma da imagem */
+    cursor: pointer; /* Muda o cursor para um ponteiro de mão */
+    position: relative;
+}
+
+.img-port:hover {
+    background-position: 100% 100%; /* Muda a posição da imagem */
+}
+
+.overlay {
+    position: absolute; /* Posição da camada */
+    top: 0; /* Posição da camada */
+    left: 0; /* Posição da camada */
+    width: 100%; /* Tamanho da camada */
+    height: 100%; /* Tamanho da camada */
+    border-radius: 40px; /* Forma da camada */
+    display: flex; /* Exibe a camada */
+    align-items: center; /* Alinha os elementos */
+    justify-content: center; /* Alinha os elementos */
+    font-size: 24px; /* Tamanho do texto */
+    font-weight: 600; /* Peso do texto */
+    background-color: #25222286; /* Cor da camada */
+    opacity: 0; /* Opacidade da camada */
+    transition: .5s; /* Efeito de transição */
+}
+
+.overlay:hover {
+    opacity: 1; /* Muda a opacidade da camada */
+}
+
+/* formulario */
+
+section.formulario {
+    padding: 80px 4%; /* Espaçamento entre a borda e o conteúdo */
+}
+
+form {
+    max-width: 500px; /* Tamanho máximo do formulário */
+    margin: 0 auto; /* Posição do formulário */
+    display: flex; /* Exibe o formulário */
+    justify-content: center; /* Alinha os elementos */
+    flex-direction: column; /* Direção dos elementos */
+    gap: 10px;
+    margin-top: 40px;
+}
+
+form input, form textarea {
+    width: 100%;
+    background-color: #4d4d4d;
+    border: none; /* Não exibe a borda */
+    outline: none; /* Remove a linha de foco */
+    padding: 20px 15px; /* Espaçamento entre a borda e o conteúdo */
+    border-radius: 15px; /* Forma da borda */
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+form input::placeholder {
+    color: #c2cccc;
+}
+
+form textarea {
+    resize: none;
+    max-height: 200px;
+}
+
+form .btn-enviar {
+    margin-top: 30px;
+    text-align: center;
+    
+}
+
+form .btn-enviar input {
+    background-color: #00918e;
+    width: 100px;
+    color: #252222;
+    padding: 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form .btn-enviar input:hover {
+    background-color: #00a7a7;
+    transform: scale(1.05); /* Aumenta o tamanho da box ao passar o mouse */
+    box-shadow: 0 0 20px rgb(13, 179, 221); /* Adiciona sombra ao passar o mouse */
+}
+
+/* footer */
+
+footer {
+    padding: 40px 4%; /* Espaçamento entre o conteúdo e a borda */
+    box-shadow: #d2eeee;
+}
+
+.logo-footer img {
+    width: 180px; /* Tamanho da imagem */
+}
+
+footer .flex {
+    justify-content: space-between; /* Distribui os elementos de forma igual */
+}
+
+.btn-social button {
+    width: 40px; /* Tamanho do botão */
+    height: 40px; /* Tamanho do botão */
+    border-radius: 30px; /* Forma do botão */
+    border: none; /* Remove a borda */
+    background-color: #00918e;
+    color: #252222;
+    font-size: 20px; /* Tamanho do texto */
+    cursor: pointer; /* Muda o cursor para um ponteiro de mão */
+    margin: 0 5px; /* Espaço entre os botões */
+}
+
+.btn-social button:hover {
+    transform: scale(1.05); /* Aumenta o tamanho da box ao passar o mouse */
+    box-shadow: 0 0 20px rgb(13, 179, 221); /* Adiciona sombra ao passar o mouse */
+    transition: .2s; /* Efeito de transição */
+}
+
+footer .line-footer {
+    padding: 20px 0; /* Espaçamento entre a linha e o conteúdo */
+}
+
+.borda {
+    border-top:2px solid #00918e;
+}
+
+footer .line-footer p i{
+    color: #00918e;
+    font-size: 22px; /* Tamanho do ícone */
+}
+
+footer .line-footer p a {
+    color: #c2cccc; /* Cor do texto */
+}
+
+
+
+
