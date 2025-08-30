@@ -91,6 +91,23 @@ header .btn-contato button:hover {
     background-color: #00b3b3; /* cor de fundo ao passar o cursor */
 }
 
+/* responsividade */
+
+.menu-toggle {
+    display: none; /* esconde o menu */
+    flex-direction: column; /* exibe em coluna */
+    gap: 4px; /* espaçamento entre os elementos */
+}
+
+.menu-toggle span {
+    width: 30px; /* largura da linha */
+    height: 3px; /* altura da linha */
+    background-color: #00918e; /* cor da linha */
+    border-radius: 2px; /* arredonda as bordas */
+    cursor: pointer; /* muda o cursor para um ponteiro de mão */
+}
+
+/* fim do header */
 
 /* CONTEUDO PRINCIPAL  */
 
@@ -542,5 +559,113 @@ footer .line-footer p a {
 }
 
 
+/* resposividade */
 
+@media (max-width: 884px) {
+    header .navgation nav ul li {
+        padding: 0 20px; /* espaçamento entre os elementos */
+    }
+
+    section .main-content .flex {
+        flex-direction: column; /* exibe em coluna */
+        gap: 40px; /* espaçamento entre os elementos */
+    }
+
+    .main-content .flex {
+        gap: 40px; /* espaçamento entre os elementos */
+        display: flex;
+        flex-direction: column-reverse; /* exibe em coluna */
+        align-items: center; /* alinha os elementos ao centro */
+    }
+
+    .main-content .text-topo h1 {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .main-content .text-topo h3 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .main-content .text-topo p {
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .main-content .img-topo {
+        text-align: center; /* Centraliza a imagem */
+        display: flex;
+        justify-content: center;
+    }
+
+    .main-content .img-topo img {
+        width: 80%; /* Ajuste este valor para o tamanho desejado da sua logo */
+        height: auto; /* Mantém a proporção da imagem */
+        display: block; /* Garante que a imagem se comporte como um bloco para o layout */
+    }
+
+    .flex .img-sobre  {
+        width: 80%; /* Tamanho da imagem */
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    section.mochila-dev .flex {
+        gap: 20px; /* <--- AJUSTE O VALOR AQUI! Reduza para um espaçamento menor entre a imagem e o bloco de texto/ícones */
+    }
+
+    section.trabalhos .flex {
+        flex-direction: column; /* exibe em coluna */
+        gap: 40px; /* espaçamento entre os elementos */
+    }
+
+    section.sobre .flex {
+        flex-direction: column; /* exibe em coluna */
+        gap: 40px; /* espaçamento entre os elementos */
+    }
+
+    section.portfolio .flex {
+        flex-direction: column; /* exibe em coluna */
+        gap: 40px; /* espaçamento entre os elementos */
+    }
+}
+
+@media (max-width: 480px) {
+    header .navgation nav {
+        display: none; /* esconde o menu */
+    }
+
+    header .btn-contato {
+        display: none; /* esconde o botão */
+    }
+
+    .menu-toggle {
+        display: flex; /* exibe o menu */
+    }
+
+    .main-content .text-topo h1 {
+        font-size: 28px;
+    }
+
+    .main-content .text-topo h3 {
+        font-size: 18px;
+    }
+
+    .main-content .text-topo p {
+        font-size: 14px;
+    }
+
+    .mochila-dev .img-mochila img {
+        width: 100%; /* Ajuste este valor para o tamanho desejado da sua logo/mochila */
+    }
+
+    .img-port {
+        width: 100%; /* Tamanho da imagem */
+        height: auto; /* Tamanho da imagem */
+    }
+
+    
+}
 
